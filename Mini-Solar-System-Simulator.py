@@ -81,6 +81,9 @@ def main():
         color=(255, 0, 0),
         pos=(WIDTH//2 + 100, HEIGHT//2),  # Start 100 pixels to the right
         velocity=(0, 2.2)  # Adjusted for elliptical orbit
+        #when you speed up mars it goes in chaotic motion so if you like to fix it and make it smooth 
+        #the smallest value i have find that it works with 1 decimal is 3.1 so comment the above and uncomment  the below
+        #velocity=(0,3.1)
     )
 
     jupiter = Planet(
